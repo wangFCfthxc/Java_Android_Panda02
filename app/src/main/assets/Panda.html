@@ -1,0 +1,28 @@
+<script>
+    function click1(){
+    var here = document.getElementById('here');
+    here.innerHTML = parseInt(Math.random()*49+1);
+    }
+    function showName(name){
+    var nameSpan = document.getElementById('name');
+    nameSpan.innerHTML = name;
+    }
+    function getInput(){
+        var nameSpan = document.getElementById('name');
+        var input = document.getElementById('input');
+        nameSpan.innerHTML = input.value;
+        myjs.getName(input.value);
+    }
+</script>
+<h1 style="background-color:#ff0">Panda Big Company</h1>
+<hr>
+Hello, World<br>
+<a href='Panda01.html'>Panda01</a>
+<hr>
+<input type="button" value="click" onclick="click1()" />
+<div id="here"></div>
+<!--<img src='imgs/picture.gif'>-->
+<hr>
+Welcome, <span id='name'></span><hr>
+<input type='text' id='input'>
+<input type='button' value='get' onclick="getInput()">
